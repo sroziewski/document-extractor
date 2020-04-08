@@ -1,0 +1,3 @@
+[debug] Copy resource mappings: 
+[debug] 	(C:\dev\sentence-extractor\src\main\resources\application.conf,C:\dev\sentence-extractor\target\scala-2.11\classes\application.conf)
+[debug] 	(C:\dev\sentence-extractor\src\main\resources\logback.xml,C:\dev\sentence-extractor\target\scala-2.11\classes\logback.xml)

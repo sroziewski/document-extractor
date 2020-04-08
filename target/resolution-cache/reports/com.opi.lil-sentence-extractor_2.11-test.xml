@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="com.opi.lil"
+		module="sentence-extractor_2.11"
+		revision="1.0"
+		conf="test"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20161223162815"/>
+	<dependencies>
+		<module organisation="wabisabi" name="wabisabi_2.11">
+			<revision name="2.0.14" status="release" pubdate="20161223162818" resolver="gphat" artresolver="gphat" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="44">
+				<metadata-artifact status="successful" details="" size="1738" time="2025" location="C:\Users\roziewski\.ivy2\cache\wabisabi\wabisabi_2.11\ivy-2.0.14.xml" searched="true" original-local-location="C:\Users\roziewski\.ivy2\cache\wabisabi\wabisabi_2.11\ivy-2.0.14.xml.original" origin-is-local="false" origin-location="https://raw.github.com/gphat/mvn-repo/master/releases/wabisabi/wabisabi_2.11/2.0.14/wabisabi_2.11-2.0.14.pom"/>
+				<caller organisation="com.opi.lil" name="sentence-extractor_2.11" conf="test, compile, runtime" rev="2.0.14" rev-constraint-default="2.0.14" rev-constraint-dynamic="2.0.14" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="wabisabi_2.11" type="jar" ext="jar" status="successful" details="" size="28805" time="2017" location="C:\Users\roziewski\.ivy2\cache\wabisabi\wabisabi_2.11\jars\wabisabi_2.11-2.0.14.jar">
+						<origin-location is-local="false" location="https://raw.github.com/gphat/mvn-repo/master/releases/wabisabi/wabisabi_2.11/2.0.14/wabisabi_2.11-2.0.14.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.netaporter" name="scala-uri_2.11">
+			<revision name="0.4.3" status="release" pubdate="20140916233151" resolver="public" artresolver="public" homepage="https://github.com/net-a-porter/scala-uri" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="50">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="1798" time="138" location="C:\Users\roziewski\.ivy2\cache\com.netaporter\scala-uri_2.11\ivy-0.4.3.xml" searched="true" original-local-location="C:\Users\roziewski\.ivy2\cache\com.netaporter\scala-uri_2.11\ivy-0.4.3.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/netaporter/scala-uri_2.11/0.4.3/scala-uri_2.11-0.4.3.pom"/>
+				<caller organisation="wabisabi" name="wabisabi_2.11" conf="default, compile, runtime, master" rev="0.4.3" rev-constraint-default="0.4.3" rev-constraint-dynamic="0.4.3" callerrev="2.0.14"/>
+				<artifacts>
+					<artifact name="scala-uri_2.11" type="jar" ext="jar" status="successful" details="" size="158209" time="546" location="C:\Users\roziewski\.ivy2\cache\com.netaporter\scala-uri_2.11\jars\scala-uri_2.11-0.4.3.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/netaporter/scala-uri_2.11/0.4.3/scala-uri_2.11-0.4.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.parboiled" name="parboiled_2.11">
+			<revision name="2.0.1" status="release" pubdate="20140905223034" resolver="public" artresolver="public" homepage="http://parboiled.org" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="51">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="2285" time="130" location="C:\Users\roziewski\.ivy2\cache\org.parboiled\parboiled_2.11\ivy-2.0.1.xml" searched="true" original-local-location="C:\Users\roziewski\.ivy2\cache\org.parboiled\parboiled_2.11\ivy-2.0.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/parboiled/parboiled_2.11/2.0.1/parboiled_2.11-2.0.1.pom"/>
+				<caller organisation="com.netaporter" name="scala-uri_2.11" conf="compile, runtime" rev="2.0.1" rev-constraint-default="2.0.1" rev-constraint-dynamic="2.0.1" callerrev="0.4.3"/>
+				<artifacts>
+					<artifact name="parboiled_2.11" type="jar" ext="jar" status="successful" details="" size="816386" time="685" location="C:\Users\roziewski\.ivy2\cache\org.parboiled\parboiled_2.11\jars\parboiled_2.11-2.0.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/parboiled/parboiled_2.11/2.0.1/parboiled_2.11-2.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.chuusai" name="shapeless_2.11">
+			<revision name="2.0.0" status="release" pubdate="20140417120556" resolver="public" artresolver="public" homepage="https://github.com/milessabin/shapeless" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="52">
+				<license name="Apache License" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="successful" details="" size="1793" time="132" location="C:\Users\roziewski\.ivy2\cache\com.chuusai\shapeless_2.11\ivy-2.0.0.xml" searched="true" original-local-location="C:\Users\roziewski\.ivy2\cache\com.chuusai\shapeless_2.11\ivy-2.0.0.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/chuusai/shapeless_2.11/2.0.0/shapeless_2.11-2.0.0.pom"/>
+				<caller organisation="org.parboiled" name="parboiled_2.11" conf="compile, runtime" rev="2.0.0" rev-constraint-default="2.0.0" rev-constraint-dynamic="2.0.0" callerrev="2.0.1"/>
+				<artifacts>
+					<artifact name="shapeless_2.11" type="bundle" ext="jar" status="successful" details="" size="2049451" time="1083" location="C:\Users\roziewski\.ivy2\cache\com.chuusai\shapeless_2.11\bundles\shapeless_2.11-2.0.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/chuusai/shapeless_2.11/2.0.0/shapeless_2.11-2.0.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.clapper" name="grizzled-slf4j_2.11">
+			<revision name="1.0.2" status="release" pubdate="20140427162710" resolver="public" artresolver="public" homepage="https://github.com/bmc/grizzled-slf4j/#readme" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="49">
+				<license name="BSD" url="http://software.clapper.org/grizzled-slf4j/license.html"/>
+				<metadata-artifact status="successful" details="" size="1915" time="133" location="C:\Users\roziewski\.ivy2\cache\org.clapper\grizzled-slf4j_2.11\ivy-1.0.2.xml" searched="true" original-local-location="C:\Users\roziewski\.ivy2\cache\org.clapper\grizzled-slf4j_2.11\ivy-1.0.2.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/clapper/grizzled-slf4j_2.11/1.0.2/grizzled-slf4j_2.11-1.0.2.pom"/>
+				<caller organisation="wabisabi" name="wabisabi_2.11" conf="default, compile, runtime, master" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="2.0.14"/>
+				<artifacts>
+					<artifact name="grizzled-slf4j_2.11" type="jar" ext="jar" status="successful" details="" size="6427" time="460" location="C:\Users\roziewski\.ivy2\cache\org.clapper\grizzled-slf4j_2.11\jars\grizzled-slf4j_2.11-1.0.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/clapper/grizzled-slf4j_2.11/1.0.2/grizzled-slf4j_2.11-1.0.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.databinder.dispatch" name="dispatch-core_2.11">
+			<revision name="0.11.2" status="release" pubdate="20140811004451" resolver="public" artresolver="public" homepage="http://dispatch.databinder.net/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="45">
+				<license name="LGPL v3" url="http://www.gnu.org/licenses/lgpl.txt"/>
+				<metadata-artifact status="successful" details="" size="2086" time="125" location="C:\Users\roziewski\.ivy2\cache\net.databinder.dispatch\dispatch-core_2.11\ivy-0.11.2.xml" searched="true" original-local-location="C:\Users\roziewski\.ivy2\cache\net.databinder.dispatch\dispatch-core_2.11\ivy-0.11.2.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/net/databinder/dispatch/dispatch-core_2.11/0.11.2/dispatch-core_2.11-0.11.2.pom"/>
+				<caller organisation="wabisabi" name="wabisabi_2.11" conf="default, compile, runtime, master" rev="0.11.2" rev-constraint-default="0.11.2" rev-constraint-dynamic="0.11.2" callerrev="2.0.14"/>
+				<artifacts>
+					<artifact name="dispatch-core_2.11" type="jar" ext="jar" status="successful" details="" size="264020" time="763" location="C:\Users\roziewski\.ivy2\cache\net.databinder.dispatch\dispatch-core_2.11\jars\dispatch-core_2.11-0.11.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/net/databinder/dispatch/dispatch-core_2.11/0.11.2/dispatch-core_2.11-0.11.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.ning" name="async-http-client">
+			<revision name="1.8.10" status="release" pubdate="20140611143655" resolver="public" artresolver="public" homepage="http://github.com/AsyncHttpClient/async-http-client" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="47">
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="successful" details="" size="24523" time="180" location="C:\Users\roziewski\.ivy2\cache\com.ning\async-http-client\ivy-1.8.10.xml" searched="true" original-local-location="C:\Users\roziewski\.ivy2\cache\com.ning\async-http-client\ivy-1.8.10.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/ning/async-http-client/1.8.10/async-http-client-1.8.10.pom"/>
+				<caller organisation="net.databinder.dispatch" name="dispatch-core_2.11" conf="compile, runtime" rev="1.8.10" rev-constraint-default="1.8.10" rev-constraint-dynamic="1.8.10" callerrev="0.11.2"/>
+				<artifacts>
+					<artifact name="async-http-client" type="jar" ext="jar" status="successful" details="" size="528971" time="591" location="C:\Users\roziewski\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.8.10.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/ning/async-http-client/1.8.10/async-http-client-1.8.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty">
+			<revision name="3.9.2.Final" status="release" pubdate="20140611112254" resolver="public" artresolver="public" homepage="http://netty.io/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="48">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="28842" time="137" location="C:\Users\roziewski\.ivy2\cache\io.netty\netty\ivy-3.9.2.Final.xml" searched="true" original-local-location="C:\Users\roziewski\.ivy2\cache\io.netty\netty\ivy-3.9.2.Final.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/io/netty/netty/3.9.2.Final/netty-3.9.2.Final.pom"/>
+				<caller organisation="com.ning" name="async-http-client" conf="compile, runtime" rev="3.9.2.Final" rev-constraint-default="3.9.2.Final" rev-constraint-dynamic="3.9.2.Final" callerrev="1.8.10"/>
+				<caller organisation="com.datastax.cassandra" name="cassandra-driver-core" conf="default, compile, runtime, master" rev="3.9.0.Final" rev-constraint-default="3.9.0.Final" rev-constraint-dynamic="3.9.0.Final" callerrev="2.0.1"/>
+				<artifacts>
+					<artifact name="netty" type="bundle" ext="jar" status="successful" details="" size="1303237" time="718" location="C:\Users\roziewski\.ivy2\cache\io.netty\netty\bundles\netty-3.9.2.Final.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/netty/netty/3.9.2.Final/netty-3.9.2.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="3.9.0.Final" status="release" pubdate="20131222115540" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://netty.io/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="6485" time="0" location="C:\Users\roziewski\.ivy2\cache\io.netty\netty\ivy-3.9.0.Final.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/io/netty/netty/3.9.0.Final/netty-3.9.0.Final.pom"/>
+				<evicted-by rev="3.9.2.Final"/>
+				<caller organisation="com.datastax.cassandra" name="cassandra-driver-core" conf="default, compile, runtime, master" rev="3.9.0.Final" rev-constraint-default="3.9.0.Final" rev-constraint-dynamic="3.9.0.Final" callerrev="2.0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-xml_2.11">
+			<revision name="1.0.1" status="release" pubdate="20140416112108" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="46">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="3024" time="0" location="C:\Users\roziewski\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.1/scala-xml_2.11-1.0.1.pom"/>
+				<caller organisation="net.databinder.dispatch" name="dispatch-core_2.11" conf="compile, runtime" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="0.11.2"/>
+				<artifacts>
+					<artifact name="scala-xml_2.11" type="bundle" ext="jar" status="no" details="" size="655685" time="0" location="C:\Users\roziewski\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.1/scala-xml_2.11-1.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.sksamuel.elastic4s" name="elastic4s-core_2.11">
+			<revision name="1.7.4" status="release" pubdate="20150912183129" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sksamuel/elastic4s" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="24">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="4377" time="0" location="C:\Users\roziewski\.ivy2\cache\com.sksamuel.elastic4s\elastic4s-core_2.11\ivy-1.7.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/sksamuel/elastic4s/elastic4s-core_2.11/1.7.4/elastic4s-core_2.11-1.7.4.pom"/>
+				<caller organisation="com.opi.lil" name="sentence-extractor_2.11" conf="test, compile, runtime" rev="1.7.4" rev-constraint-default="1.7.4" rev-constraint-dynamic="1.7.4" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="elastic4s-core_2.11" type="jar" ext="jar" status="no" details="" size="1915769" time="0" location="C:\Users\roziewski\.ivy2\cache\com.sksamuel.elastic4s\elastic4s-core_2.11\jars\elastic4s-core_2.11-1.7.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/sksamuel/elastic4s/elastic4s-core_2.11/1.7.4/elastic4s-core_2.11-1.7.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.elasticsearch" name="elasticsearch">
+			<revision name="1.7.1" status="release" pubdate="20150729115045" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="26">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="10001" time="0" location="C:\Users\roziewski\.ivy2\cache\org.elasticsearch\elasticsearch\ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/elasticsearch/elasticsearch/1.7.1/elasticsearch-1.7.1.pom"/>
+				<caller organisation="com.sksamuel.elastic4s" name="elastic4s-core_2.11" conf="default, compile, runtime, master" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.4"/>
+				<artifacts>
+					<artifact name="elasticsearch" type="jar" ext="jar" status="no" details="" size="14048559" time="0" location="C:\Users\roziewski\.ivy2\cache\org.elasticsearch\elasticsearch\jars\elasticsearch-1.7.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/elasticsearch/elasticsearch/1.7.1/elasticsearch-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.yaml" name="snakeyaml">
+			<revision name="1.12" status="release" pubdate="20130302234606" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.snakeyaml.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="43">
+				<license name="Apache License Version 2.0" url="LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="3445" time="0" location="C:\Users\roziewski\.ivy2\cache\org.yaml\snakeyaml\ivy-1.12.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/yaml/snakeyaml/1.12/snakeyaml-1.12.pom"/>
+				<caller organisation="org.elasticsearch" name="elasticsearch" conf="compile, runtime" rev="1.12" rev-constraint-default="1.12" rev-constraint-dynamic="1.12" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="snakeyaml" type="bundle" ext="jar" status="no" details="" size="270779" time="0" location="C:\Users\roziewski\.ivy2\cache\org.yaml\snakeyaml\bundles\snakeyaml-1.12.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/yaml/snakeyaml/1.12/snakeyaml-1.12.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ow2.asm" name="asm-commons">
+			<revision name="4.1" status="release" pubdate="20121014173823" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="42">
+				<metadata-artifact status="no" details="" size="4426" time="0" location="C:\Users\roziewski\.ivy2\cache\org.ow2.asm\asm-commons\ivy-4.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/ow2/asm/asm-commons/4.1/asm-commons-4.1.pom"/>
+				<caller organisation="org.elasticsearch" name="elasticsearch" conf="compile, runtime" rev="4.1" rev-constraint-default="4.1" rev-constraint-dynamic="4.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="asm-commons" type="jar" ext="jar" status="no" details="" size="38090" time="0" location="C:\Users\roziewski\.ivy2\cache\org.ow2.asm\asm-commons\jars\asm-commons-4.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/ow2/asm/asm-commons/4.1/asm-commons-4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ow2.asm" name="asm">
+			<revision name="4.1" status="release" pubdate="20121014173745" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="41">
+				<metadata-artifact status="no" details="" size="3781" time="0" location="C:\Users\roziewski\.ivy2\cache\org.ow2.asm\asm\ivy-4.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/ow2/asm/asm/4.1/asm-4.1.pom"/>
+				<caller organisation="org.elasticsearch" name="elasticsearch" conf="compile, runtime" rev="4.1" rev-constraint-default="4.1" rev-constraint-dynamic="4.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="asm" type="jar" ext="jar" status="no" details="" size="47359" time="0" location="C:\Users\roziewski\.ivy2\cache\org.ow2.asm\asm\jars\asm-4.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/ow2/asm/asm/4.1/asm-4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.antlr" name="antlr-runtime">
+			<revision name="3.5" status="release" pubdate="20130105043525" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.antlr.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="40">
+				<metadata-artifact status="no" details="" size="5640" time="0" location="C:\Users\roziewski\.ivy2\cache\org.antlr\antlr-runtime\ivy-3.5.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/antlr/antlr-runtime/3.5/antlr-runtime-3.5.pom"/>
+				<caller organisation="org.elasticsearch" name="elasticsearch" conf="compile, runtime" rev="3.5" rev-constraint-default="3.5" rev-constraint-dynamic="3.5" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="antlr-runtime" type="jar" ext="jar" status="no" details="" size="167735" time="0" location="C:\Users\roziewski\.ivy2\cache\org.antlr\antlr-runtime\jars\antlr-runtime-3.5.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/antlr/antlr-runtime/3.5/antlr-runtime-3.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-spatial">
+			<revision name="4.10.4" status="release" pubdate="20150303091824" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="38">
+				<metadata-artifact status="no" details="" size="352366" time="0" location="C:\Users\roziewski\.ivy2\cache\org.apache.lucene\lucene-spatial\ivy-4.10.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/lucene/lucene-spatial/4.10.4/lucene-spatial-4.10.4.pom"/>
+				<caller organisation="org.elasticsearch" name="elasticsearch" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="lucene-spatial" type="jar" ext="jar" status="no" details="" size="126794" time="0" location="C:\Users\roziewski\.ivy2\cache\org.apache.lucene\lucene-spatial\jars\lucene-spatial-4.10.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/lucene/lucene-spatial/4.10.4/lucene-spatial-4.10.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.spatial4j" name="spatial4j">
+			<revision name="0.4.1" status="release" pubdate="20140219071135" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spatial4j/spatial4j" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="39">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4048" time="0" location="C:\Users\roziewski\.ivy2\cache\com.spatial4j\spatial4j\ivy-0.4.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/spatial4j/spatial4j/0.4.1/spatial4j-0.4.1.pom"/>
+				<caller organisation="org.apache.lucene" name="lucene-spatial" conf="compile, runtime" rev="0.4.1" rev-constraint-default="0.4.1" rev-constraint-dynamic="0.4.1" callerrev="4.10.4"/>
+				<artifacts>
+					<artifact name="spatial4j" type="bundle" ext="jar" status="no" details="" size="102177" time="0" location="C:\Users\roziewski\.ivy2\cache\com.spatial4j\spatial4j\bundles\spatial4j-0.4.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/spatial4j/spatial4j/0.4.1/spatial4j-0.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-join">
+			<revision name="4.10.4" status="release" pubdate="20150303091952" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="36">
+				<metadata-artifact status="no" details="" size="352317" time="0" location="C:\Users\roziewski\.ivy2\cache\org.apache.lucene\lucene-join\ivy-4.10.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/lucene/lucene-join/4.10.4/lucene-join-4.10.4.pom"/>
+				<caller organisation="org.elasticsearch" name="elasticsearch" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="lucene-join" type="jar" ext="jar" status="no" details="" size="64021" time="0" location="C:\Users\roziewski\.ivy2\cache\org.apache.lucene\lucene-join\jars\lucene-join-4.10.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/lucene/lucene-join/4.10.4/lucene-join-4.10.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-grouping">
+			<revision name="4.10.4" status="release" pubdate="20150303092017" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="37">
+				<metadata-artifact status="no" details="" size="352219" time="0" location="C:\Users\roziewski\.ivy2\cache\org.apache.lucene\lucene-grouping\ivy-4.10.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/lucene/lucene-grouping/4.10.4/lucene-grouping-4.10.4.pom"/>
+				<caller organisation="org.apache.lucene" name="lucene-join" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="4.10.4"/>
+				<caller organisation="org.elasticsearch" name="elasticsearch" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="lucene-grouping" type="jar" ext="jar" status="no" details="" size="107784" time="0" location="C:\Users\roziewski\.ivy2\cache\org.apache.lucene\lucene-grouping\jars\lucene-grouping-4.10.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/lucene/lucene-grouping/4.10.4/lucene-grouping-4.10.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-suggest">
+			<revision name="4.10.4" status="release" pubdate="20150303091814" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="34">
+				<metadata-artifact status="no" details="" size="352765" time="0" location="C:\Users\roziewski\.ivy2\cache\org.apache.lucene\lucene-suggest\ivy-4.10.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/lucene/lucene-suggest/4.10.4/lucene-suggest-4.10.4.pom"/>
+				<caller organisation="org.elasticsearch" name="elasticsearch" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="lucene-suggest" type="jar" ext="jar" status="no" details="" size="179011" time="0" location="C:\Users\roziewski\.ivy2\cache\org.apache.lucene\lucene-suggest\jars\lucene-suggest-4.10.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/lucene/lucene-suggest/4.10.4/lucene-suggest-4.10.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-misc">
+			<revision name="4.10.4" status="release" pubdate="20150303091929" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="35">
+				<metadata-artifact status="no" details="" size="351977" time="0" location="C:\Users\roziewski\.ivy2\cache\org.apache.lucene\lucene-misc\ivy-4.10.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/lucene/lucene-misc/4.10.4/lucene-misc-4.10.4.pom"/>
+				<caller organisation="org.apache.lucene" name="lucene-suggest" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="4.10.4"/>
+				<caller organisation="org.elasticsearch" name="elasticsearch" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="lucene-misc" type="jar" ext="jar" status="no" details="" size="97173" time="0" location="C:\Users\roziewski\.ivy2\cache\org.apache.lucene\lucene-misc\jars\lucene-misc-4.10.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/lucene/lucene-misc/4.10.4/lucene-misc-4.10.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-highlighter">
+			<revision name="4.10.4" status="release" pubdate="20150303092007" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="31">
+				<metadata-artifact status="no" details="" size="352523" time="0" location="C:\Users\roziewski\.ivy2\cache\org.apache.lucene\lucene-highlighter\ivy-4.10.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/lucene/lucene-highlighter/4.10.4/lucene-highlighter-4.10.4.pom"/>
+				<caller organisation="org.elasticsearch" name="elasticsearch" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="lucene-highlighter" type="jar" ext="jar" status="no" details="" size="138282" time="0" location="C:\Users\roziewski\.ivy2\cache\org.apache.lucene\lucene-highlighter\jars\lucene-highlighter-4.10.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/lucene/lucene-highlighter/4.10.4/lucene-highlighter-4.10.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-memory">
+			<revision name="4.10.4" status="release" pubdate="20150303091941" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="30">
+				<metadata-artifact status="no" details="" size="352494" time="0" location="C:\Users\roziewski\.ivy2\cache\org.apache.lucene\lucene-memory\ivy-4.10.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/lucene/lucene-memory/4.10.4/lucene-memory-4.10.4.pom"/>
+				<caller organisation="org.apache.lucene" name="lucene-highlighter" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="4.10.4"/>
+				<caller organisation="org.elasticsearch" name="elasticsearch" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="lucene-memory" type="jar" ext="jar" status="no" details="" size="36078" time="0" location="C:\Users\roziewski\.ivy2\cache\org.apache.lucene\lucene-memory\jars\lucene-memory-4.10.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/lucene/lucene-memory/4.10.4/lucene-memory-4.10.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-queryparser">
+			<revision name="4.10.4" status="release" pubdate="20150303091903" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="32">
+				<metadata-artifact status="no" details="" size="352647" time="0" location="C:\Users\roziewski\.ivy2\cache\org.apache.lucene\lucene-queryparser\ivy-4.10.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/lucene/lucene-queryparser/4.10.4/lucene-queryparser-4.10.4.pom"/>
+				<caller organisation="org.elasticsearch" name="elasticsearch" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="lucene-queryparser" type="jar" ext="jar" status="no" details="" size="391515" time="0" location="C:\Users\roziewski\.ivy2\cache\org.apache.lucene\lucene-queryparser\jars\lucene-queryparser-4.10.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/lucene/lucene-queryparser/4.10.4/lucene-queryparser-4.10.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-sandbox">
+			<revision name="4.10.4" status="release" pubdate="20150303091838" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="33">
+				<metadata-artifact status="no" details="" size="352076" time="0" location="C:\Users\roziewski\.ivy2\cache\org.apache.lucene\lucene-sandbox\ivy-4.10.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/lucene/lucene-sandbox/4.10.4/lucene-sandbox-4.10.4.pom"/>
+				<caller organisation="org.apache.lucene" name="lucene-queryparser" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="4.10.4"/>
+				<caller organisation="org.elasticsearch" name="elasticsearch" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="lucene-sandbox" type="jar" ext="jar" status="no" details="" size="119449" time="0" location="C:\Users\roziewski\.ivy2\cache\org.apache.lucene\lucene-sandbox\jars\lucene-sandbox-4.10.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/lucene/lucene-sandbox/4.10.4/lucene-sandbox-4.10.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-queries">
+			<revision name="4.10.4" status="release" pubdate="20150303091918" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="29">
+				<metadata-artifact status="no" details="" size="351943" time="0" location="C:\Users\roziewski\.ivy2\cache\org.apache.lucene\lucene-queries\ivy-4.10.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/lucene/lucene-queries/4.10.4/lucene-queries-4.10.4.pom"/>
+				<caller organisation="org.apache.lucene" name="lucene-queryparser" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="4.10.4"/>
+				<caller organisation="org.apache.lucene" name="lucene-highlighter" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="4.10.4"/>
+				<caller organisation="org.apache.lucene" name="lucene-suggest" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="4.10.4"/>
+				<caller organisation="org.apache.lucene" name="lucene-grouping" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="4.10.4"/>
+				<caller organisation="org.apache.lucene" name="lucene-spatial" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="4.10.4"/>
+				<caller organisation="org.elasticsearch" name="elasticsearch" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="lucene-queries" type="jar" ext="jar" status="no" details="" size="213029" time="0" location="C:\Users\roziewski\.ivy2\cache\org.apache.lucene\lucene-queries\jars\lucene-queries-4.10.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/lucene/lucene-queries/4.10.4/lucene-queries-4.10.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-analyzers-common">
+			<revision name="4.10.4" status="release" pubdate="20150303092333" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="28">
+				<metadata-artifact status="no" details="" size="351971" time="0" location="C:\Users\roziewski\.ivy2\cache\org.apache.lucene\lucene-analyzers-common\ivy-4.10.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/lucene/lucene-analyzers-common/4.10.4/lucene-analyzers-common-4.10.4.pom"/>
+				<caller organisation="org.apache.lucene" name="lucene-suggest" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="4.10.4"/>
+				<caller organisation="org.elasticsearch" name="elasticsearch" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="lucene-analyzers-common" type="jar" ext="jar" status="no" details="" size="1699875" time="0" location="C:\Users\roziewski\.ivy2\cache\org.apache.lucene\lucene-analyzers-common\jars\lucene-analyzers-common-4.10.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/lucene/lucene-analyzers-common/4.10.4/lucene-analyzers-common-4.10.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-core">
+			<revision name="4.10.4" status="release" pubdate="20150303092111" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="27">
+				<metadata-artifact status="no" details="" size="350876" time="0" location="C:\Users\roziewski\.ivy2\cache\org.apache.lucene\lucene-core\ivy-4.10.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/lucene/lucene-core/4.10.4/lucene-core-4.10.4.pom"/>
+				<caller organisation="org.apache.lucene" name="lucene-queryparser" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="4.10.4"/>
+				<caller organisation="org.apache.lucene" name="lucene-misc" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="4.10.4"/>
+				<caller organisation="org.apache.lucene" name="lucene-queries" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="4.10.4"/>
+				<caller organisation="org.apache.lucene" name="lucene-highlighter" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="4.10.4"/>
+				<caller organisation="org.apache.lucene" name="lucene-suggest" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="4.10.4"/>
+				<caller organisation="org.apache.lucene" name="lucene-grouping" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="4.10.4"/>
+				<caller organisation="org.apache.lucene" name="lucene-analyzers-common" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="4.10.4"/>
+				<caller organisation="org.apache.lucene" name="lucene-sandbox" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="4.10.4"/>
+				<caller organisation="org.apache.lucene" name="lucene-join" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="4.10.4"/>
+				<caller organisation="org.apache.lucene" name="lucene-spatial" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="4.10.4"/>
+				<caller organisation="org.apache.lucene" name="lucene-memory" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="4.10.4"/>
+				<caller organisation="org.elasticsearch" name="elasticsearch" conf="compile, runtime" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="lucene-core" type="jar" ext="jar" status="no" details="" size="2563490" time="0" location="C:\Users\roziewski\.ivy2\cache\org.apache.lucene\lucene-core\jars\lucene-core-4.10.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/lucene/lucene-core/4.10.4/lucene-core-4.10.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.11.7" status="release" pubdate="20150622221702" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.7/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master, default, default(compile)" position="25">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2685" time="0" location="C:\Users\roziewski\.ivy2\cache\org.scala-lang\scala-library\ivy-2.11.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7.pom"/>
+				<caller organisation="org.clapper" name="grizzled-slf4j_2.11" conf="compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="1.0.2"/>
+				<caller organisation="com.opi.lil" name="sentence-extractor_2.11" conf="test, compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.0"/>
+				<caller organisation="net.databinder.dispatch" name="dispatch-core_2.11" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="0.11.2"/>
+				<caller organisation="com.typesafe.akka" name="akka-actor_2.11" conf="default, compile, runtime, master" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="2.3.6"/>
+				<caller organisation="com.netaporter" name="scala-uri_2.11" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="0.4.3"/>
+				<caller organisation="org.scala-lang.modules" name="scala-xml_2.11" conf="compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="1.0.1"/>
+				<caller organisation="org.parboiled" name="parboiled_2.11" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="2.0.1"/>
+				<caller organisation="com.sksamuel.elastic4s" name="elastic4s-core_2.11" conf="default, compile, runtime, master" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="1.7.4"/>
+				<caller organisation="wabisabi" name="wabisabi_2.11" conf="default, compile, runtime, master" rev="2.11.4" rev-constraint-default="2.11.4" rev-constraint-dynamic="2.11.4" callerrev="2.0.14"/>
+				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.11" conf="default, compile, runtime, master" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="2.3.6"/>
+				<caller organisation="com.chuusai" name="shapeless_2.11" conf="compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="2.0.0"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5745606" time="0" location="C:\Users\roziewski\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.11.6" status="release" pubdate="20150226020105" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.6/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master, master(*), runtime(*), compile(*)" position="-1">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2685" time="0" location="C:\Users\roziewski\.ivy2\cache\org.scala-lang\scala-library\ivy-2.11.6.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.6/scala-library-2.11.6.pom"/>
+				<evicted-by rev="2.11.7"/>
+				<caller organisation="com.opi.lil" name="sentence-extractor_2.11" conf="test, compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.0"/>
+				<caller organisation="com.typesafe.akka" name="akka-actor_2.11" conf="default, compile, runtime, master" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="2.3.6"/>
+				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.11" conf="default, compile, runtime, master" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="2.3.6"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.11.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*)" position="-1">
+				<evicted-by rev="2.11.7"/>
+				<caller organisation="org.clapper" name="grizzled-slf4j_2.11" conf="compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="1.0.2"/>
+				<caller organisation="org.scala-lang.modules" name="scala-xml_2.11" conf="compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="1.0.1"/>
+				<caller organisation="com.chuusai" name="shapeless_2.11" conf="compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="2.0.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.11.4" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.11.7"/>
+				<caller organisation="org.clapper" name="grizzled-slf4j_2.11" conf="compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="1.0.2"/>
+				<caller organisation="net.databinder.dispatch" name="dispatch-core_2.11" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="0.11.2"/>
+				<caller organisation="com.typesafe.akka" name="akka-actor_2.11" conf="default, compile, runtime, master" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="2.3.6"/>
+				<caller organisation="org.scala-lang.modules" name="scala-xml_2.11" conf="compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="1.0.1"/>
+				<caller organisation="wabisabi" name="wabisabi_2.11" conf="default, compile, runtime, master" rev="2.11.4" rev-constraint-default="2.11.4" rev-constraint-dynamic="2.11.4" callerrev="2.0.14"/>
+				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.11" conf="default, compile, runtime, master" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="2.3.6"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.11.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.11.7"/>
+				<caller organisation="org.clapper" name="grizzled-slf4j_2.11" conf="compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="1.0.2"/>
+				<caller organisation="net.databinder.dispatch" name="dispatch-core_2.11" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="0.11.2"/>
+				<caller organisation="com.typesafe.akka" name="akka-actor_2.11" conf="default, compile, runtime, master" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="2.3.6"/>
+				<caller organisation="com.netaporter" name="scala-uri_2.11" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="0.4.3"/>
+				<caller organisation="org.scala-lang.modules" name="scala-xml_2.11" conf="compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="1.0.1"/>
+				<caller organisation="org.parboiled" name="parboiled_2.11" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="2.0.1"/>
+				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.11" conf="default, compile, runtime, master" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="2.3.6"/>
+				<caller organisation="com.chuusai" name="shapeless_2.11" conf="compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="2.0.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="edu.stanford.nlp" name="stanford-corenlp">
+			<revision name="3.6.0" status="release" pubdate="20160121101639" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://nlp.stanford.edu/software/corenlp.shtml" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="13">
+				<license name="GNU General Public License Version 3" url="http://www.gnu.org/licenses/gpl-3.0.txt"/>
+				<metadata-artifact status="no" details="" size="4076" time="0" location="C:\Users\roziewski\.ivy2\cache\edu.stanford.nlp\stanford-corenlp\ivy-3.6.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/edu/stanford/nlp/stanford-corenlp/3.6.0/stanford-corenlp-3.6.0.pom"/>
+				<caller organisation="com.opi.lil" name="sentence-extractor_2.11" conf="test, compile, runtime" rev="3.6.0" rev-constraint-default="3.6.0" rev-constraint-dynamic="3.6.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="stanford-corenlp" type="jar" ext="jar" status="no" details="" size="7270741" time="0" location="C:\Users\roziewski\.ivy2\cache\edu.stanford.nlp\stanford-corenlp\jars\stanford-corenlp-3.6.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/edu/stanford/nlp/stanford-corenlp/3.6.0/stanford-corenlp-3.6.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.12" status="release" pubdate="20150326215005" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="23">
+				<metadata-artifact status="no" details="" size="4875" time="0" location="C:\Users\roziewski\.ivy2\cache\org.slf4j\slf4j-api\ivy-1.7.12.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.pom"/>
+				<caller organisation="com.ning" name="async-http-client" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="1.8.10"/>
+				<caller organisation="org.clapper" name="grizzled-slf4j_2.11" conf="compile, runtime" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="1.0.2"/>
+				<caller organisation="edu.stanford.nlp" name="stanford-corenlp" conf="default, compile, runtime, master" rev="1.7.12" rev-constraint-default="1.7.12" rev-constraint-dynamic="1.7.12" callerrev="3.6.0"/>
+				<caller organisation="com.codahale.metrics" name="metrics-core" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="3.0.2"/>
+				<caller organisation="com.sksamuel.elastic4s" name="elastic4s-core_2.11" conf="default, compile, runtime, master" rev="1.7.12" rev-constraint-default="1.7.12" rev-constraint-dynamic="1.7.12" callerrev="1.7.4"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="default, compile, runtime, master" rev="1.7.6" rev-constraint-default="1.7.6" rev-constraint-dynamic="1.7.6" callerrev="1.1.2"/>
+				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.11" conf="default, compile, runtime, master" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="2.3.6"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="32127" time="0" location="C:\Users\roziewski\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.7.6" status="release" pubdate="20140205233714" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<metadata-artifact status="no" details="" size="4613" time="0" location="C:\Users\roziewski\.ivy2\cache\org.slf4j\slf4j-api\ivy-1.7.6.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6.pom"/>
+				<evicted-by rev="1.7.12"/>
+				<caller organisation="com.codahale.metrics" name="metrics-core" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="3.0.2"/>
+				<caller organisation="com.sksamuel.elastic4s" name="elastic4s-core_2.11" conf="default, compile, runtime, master" rev="1.7.6" rev-constraint-default="1.7.6" rev-constraint-dynamic="1.7.12" callerrev="1.7.4"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="default, compile, runtime, master" rev="1.7.6" rev-constraint-default="1.7.6" rev-constraint-dynamic="1.7.6" callerrev="1.1.2"/>
+				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.11" conf="default, compile, runtime, master" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="2.3.6"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.7.5" status="release" pubdate="20130325215215" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<metadata-artifact status="no" details="" size="4514" time="0" location="C:\Users\roziewski\.ivy2\cache\org.slf4j\slf4j-api\ivy-1.7.5.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.pom"/>
+				<evicted-by rev="1.7.12"/>
+				<caller organisation="com.ning" name="async-http-client" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="1.8.10"/>
+				<caller organisation="com.codahale.metrics" name="metrics-core" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="3.0.2"/>
+				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.11" conf="default, compile, runtime, master" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="2.3.6"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.7.7" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.7.12"/>
+				<caller organisation="org.clapper" name="grizzled-slf4j_2.11" conf="compile, runtime" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="1.0.2"/>
+				<caller organisation="com.ning" name="async-http-client" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="1.8.10"/>
+				<caller organisation="com.codahale.metrics" name="metrics-core" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="3.0.2"/>
+				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.11" conf="default, compile, runtime, master" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="2.3.6"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.json" name="javax.json-api">
+			<revision name="1.0" status="release" pubdate="20130424232157" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://json-processing-spec.java.net" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="22">
+				<metadata-artifact status="no" details="" size="4847" time="0" location="C:\Users\roziewski\.ivy2\cache\javax.json\javax.json-api\ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/javax/json/javax.json-api/1.0/javax.json-api-1.0.pom"/>
+				<caller organisation="edu.stanford.nlp" name="stanford-corenlp" conf="default, compile, runtime, master" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="3.6.0"/>
+				<artifacts>
+					<artifact name="javax.json-api" type="bundle" ext="jar" status="no" details="" size="19754" time="0" location="C:\Users\roziewski\.ivy2\cache\javax.json\javax.json-api\bundles\javax.json-api-1.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/javax/json/javax.json-api/1.0/javax.json-api-1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.googlecode.efficient-java-matrix-library" name="ejml">
+			<revision name="0.23" status="release" pubdate="20130621181625" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/efficient-java-matrix-library/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="21">
+				<license name="LGPL" url="http://www.gnu.org/copyleft/lesser.html"/>
+				<metadata-artifact status="no" details="" size="3210" time="0" location="C:\Users\roziewski\.ivy2\cache\com.googlecode.efficient-java-matrix-library\ejml\ivy-0.23.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/ejml/0.23/ejml-0.23.pom"/>
+				<caller organisation="edu.stanford.nlp" name="stanford-corenlp" conf="default, compile, runtime, master" rev="0.23" rev-constraint-default="0.23" rev-constraint-dynamic="0.23" callerrev="3.6.0"/>
+				<artifacts>
+					<artifact name="ejml" type="jar" ext="jar" status="no" details="" size="301506" time="0" location="C:\Users\roziewski\.ivy2\cache\com.googlecode.efficient-java-matrix-library\ejml\jars\ejml-0.23.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/ejml/0.23/ejml-0.23.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="de.jollyday" name="jollyday">
+			<revision name="0.4.7" status="release" pubdate="20121105010012" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://sourceforge.net/projects/jollyday" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="19">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4139" time="0" location="C:\Users\roziewski\.ivy2\cache\de.jollyday\jollyday\ivy-0.4.7.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/de/jollyday/jollyday/0.4.7/jollyday-0.4.7.pom"/>
+				<caller organisation="edu.stanford.nlp" name="stanford-corenlp" conf="default, compile, runtime, master" rev="0.4.7" rev-constraint-default="0.4.7" rev-constraint-dynamic="0.4.7" callerrev="3.6.0"/>
+				<artifacts>
+					<artifact name="jollyday" type="jar" ext="jar" status="no" details="" size="200993" time="0" location="C:\Users\roziewski\.ivy2\cache\de.jollyday\jollyday\jars\jollyday-0.4.7.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/de/jollyday/jollyday/0.4.7/jollyday-0.4.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.xml.bind" name="jaxb-api">
+			<revision name="2.2.7" status="release" pubdate="20120524113721" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jaxb.java.net/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="20">
+				<license name="CDDL 1.1" url="https://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<license name="GPL2 w/ CPE" url="https://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="no" details="" size="3184" time="0" location="C:\Users\roziewski\.ivy2\cache\javax.xml.bind\jaxb-api\ivy-2.2.7.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom"/>
+				<caller organisation="de.jollyday" name="jollyday" conf="compile, runtime" rev="2.2.7" rev-constraint-default="2.2.7" rev-constraint-dynamic="2.2.7" callerrev="0.4.7"/>
+				<artifacts>
+					<artifact name="jaxb-api" type="jar" ext="jar" status="no" details="" size="100146" time="0" location="C:\Users\roziewski\.ivy2\cache\javax.xml.bind\jaxb-api\jars\jaxb-api-2.2.7.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="joda-time" name="joda-time">
+			<revision name="2.9" status="release" pubdate="20151024114829" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.joda.org/joda-time/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="18">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6525" time="0" location="C:\Users\roziewski\.ivy2\cache\joda-time\joda-time\ivy-2.9.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/joda-time/joda-time/2.9/joda-time-2.9.pom"/>
+				<caller organisation="edu.stanford.nlp" name="stanford-corenlp" conf="default, compile, runtime, master" rev="2.9" rev-constraint-default="2.9" rev-constraint-dynamic="2.9" callerrev="3.6.0"/>
+				<caller organisation="de.jollyday" name="jollyday" conf="compile, runtime" rev="2.1" rev-constraint-default="2.1" rev-constraint-dynamic="2.1" callerrev="0.4.7"/>
+				<artifacts>
+					<artifact name="joda-time" type="jar" ext="jar" status="no" details="" size="625993" time="0" location="C:\Users\roziewski\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.9.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/joda-time/joda-time/2.9/joda-time-2.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.9"/>
+				<caller organisation="de.jollyday" name="jollyday" conf="compile, runtime" rev="2.1" rev-constraint-default="2.1" rev-constraint-dynamic="2.1" callerrev="0.4.7"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.io7m.xom" name="xom">
+			<revision name="1.2.10" status="release" pubdate="20131025181622" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://xom.nu" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="14">
+				<license name="The GNU Lesser General Public License, Version 2.1" url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="2916" time="0" location="C:\Users\roziewski\.ivy2\cache\com.io7m.xom\xom\ivy-1.2.10.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/io7m/xom/xom/1.2.10/xom-1.2.10.pom"/>
+				<caller organisation="edu.stanford.nlp" name="stanford-corenlp" conf="default, compile, runtime, master" rev="1.2.10" rev-constraint-default="1.2.10" rev-constraint-dynamic="1.2.10" callerrev="3.6.0"/>
+				<artifacts>
+					<artifact name="xom" type="jar" ext="jar" status="no" details="" size="313253" time="0" location="C:\Users\roziewski\.ivy2\cache\com.io7m.xom\xom\jars\xom-1.2.10.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/io7m/xom/xom/1.2.10/xom-1.2.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="xalan" name="xalan">
+			<revision name="2.7.0" status="release" pubdate="20140131161554" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="17">
+				<metadata-artifact status="no" details="" size="2478" time="0" location="C:\Users\roziewski\.ivy2\cache\xalan\xalan\ivy-2.7.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/xalan/xalan/2.7.0/xalan-2.7.0.pom"/>
+				<caller organisation="com.io7m.xom" name="xom" conf="compile, runtime" rev="2.7.0" rev-constraint-default="2.7.0" rev-constraint-dynamic="2.7.0" callerrev="1.2.10"/>
+				<artifacts>
+					<artifact name="xalan" type="jar" ext="jar" status="no" details="" size="2730442" time="0" location="C:\Users\roziewski\.ivy2\cache\xalan\xalan\jars\xalan-2.7.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/xalan/xalan/2.7.0/xalan-2.7.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="xerces" name="xercesImpl">
+			<revision name="2.8.0" status="release" pubdate="20060512223229" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://xerces.apache.org/xerces2-j" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="16">
+				<metadata-artifact status="no" details="" size="2861" time="0" location="C:\Users\roziewski\.ivy2\cache\xerces\xercesImpl\ivy-2.8.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/xerces/xercesImpl/2.8.0/xercesImpl-2.8.0.pom"/>
+				<caller organisation="com.io7m.xom" name="xom" conf="compile, runtime" rev="2.8.0" rev-constraint-default="2.8.0" rev-constraint-dynamic="2.8.0" callerrev="1.2.10"/>
+				<artifacts>
+					<artifact name="xercesImpl" type="jar" ext="jar" status="no" details="" size="1207073" time="0" location="C:\Users\roziewski\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.8.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/xerces/xercesImpl/2.8.0/xercesImpl-2.8.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="xml-apis" name="xml-apis">
+			<revision name="1.3.03" status="release" pubdate="20060512210702" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://xml.apache.org/commons/#external" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="15">
+				<metadata-artifact status="no" details="" size="2251" time="0" location="C:\Users\roziewski\.ivy2\cache\xml-apis\xml-apis\ivy-1.3.03.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/xml-apis/xml-apis/1.3.03/xml-apis-1.3.03.pom"/>
+				<caller organisation="xerces" name="xercesImpl" conf="compile, runtime" rev="1.3.03" rev-constraint-default="1.3.03" rev-constraint-dynamic="1.3.03" callerrev="2.8.0"/>
+				<caller organisation="com.io7m.xom" name="xom" conf="compile, runtime" rev="1.3.03" rev-constraint-default="1.3.03" rev-constraint-dynamic="1.3.03" callerrev="1.2.10"/>
+				<caller organisation="xalan" name="xalan" conf="compile, runtime" rev="2.0.2" rev-constraint-default="2.0.2" rev-constraint-dynamic="2.0.2" callerrev="2.7.0"/>
+				<artifacts>
+					<artifact name="xml-apis" type="jar" ext="jar" status="no" details="" size="195119" time="0" location="C:\Users\roziewski\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.3.03.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/xml-apis/xml-apis/1.3.03/xml-apis-1.3.03.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.0.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.3.03"/>
+				<caller organisation="xalan" name="xalan" conf="compile, runtime" rev="2.0.2" rev-constraint-default="2.0.2" rev-constraint-dynamic="2.0.2" callerrev="2.7.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.carrot2" name="morfologik-polish">
+			<revision name="1.9.0" status="release" pubdate="20140221125358" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="10">
+				<metadata-artifact status="no" details="" size="5441" time="0" location="C:\Users\roziewski\.ivy2\cache\org.carrot2\morfologik-polish\ivy-1.9.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/carrot2/morfologik-polish/1.9.0/morfologik-polish-1.9.0.pom"/>
+				<caller organisation="com.opi.lil" name="sentence-extractor_2.11" conf="test, compile, runtime" rev="1.9.0" rev-constraint-default="1.9.0" rev-constraint-dynamic="1.9.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="morfologik-polish" type="jar" ext="jar" status="no" details="" size="1902970" time="0" location="C:\Users\roziewski\.ivy2\cache\org.carrot2\morfologik-polish\jars\morfologik-polish-1.9.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/carrot2/morfologik-polish/1.9.0/morfologik-polish-1.9.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.carrot2" name="morfologik-stemming">
+			<revision name="1.9.0" status="release" pubdate="20140221125338" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="11">
+				<metadata-artifact status="no" details="" size="5664" time="0" location="C:\Users\roziewski\.ivy2\cache\org.carrot2\morfologik-stemming\ivy-1.9.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/carrot2/morfologik-stemming/1.9.0/morfologik-stemming-1.9.0.pom"/>
+				<caller organisation="org.carrot2" name="morfologik-polish" conf="default, compile, runtime, master" rev="1.9.0" rev-constraint-default="1.9.0" rev-constraint-dynamic="1.9.0" callerrev="1.9.0"/>
+				<artifacts>
+					<artifact name="morfologik-stemming" type="jar" ext="jar" status="no" details="" size="42485" time="0" location="C:\Users\roziewski\.ivy2\cache\org.carrot2\morfologik-stemming\jars\morfologik-stemming-1.9.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/carrot2/morfologik-stemming/1.9.0/morfologik-stemming-1.9.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.carrot2" name="morfologik-fsa">
+			<revision name="1.9.0" status="release" pubdate="20140221125327" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="12">
+				<metadata-artifact status="no" details="" size="5254" time="0" location="C:\Users\roziewski\.ivy2\cache\org.carrot2\morfologik-fsa\ivy-1.9.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/carrot2/morfologik-fsa/1.9.0/morfologik-fsa-1.9.0.pom"/>
+				<caller organisation="org.carrot2" name="morfologik-stemming" conf="compile, runtime" rev="1.9.0" rev-constraint-default="1.9.0" rev-constraint-dynamic="1.9.0" callerrev="1.9.0"/>
+				<artifacts>
+					<artifact name="morfologik-fsa" type="jar" ext="jar" status="no" details="" size="54217" time="0" location="C:\Users\roziewski\.ivy2\cache\org.carrot2\morfologik-fsa\jars\morfologik-fsa-1.9.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/carrot2/morfologik-fsa/1.9.0/morfologik-fsa-1.9.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.datastax.cassandra" name="cassandra-driver-core">
+			<revision name="2.0.1" status="release" pubdate="20140311133012" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/datastax/java-driver" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="6">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4566" time="0" location="C:\Users\roziewski\.ivy2\cache\com.datastax.cassandra\cassandra-driver-core\ivy-2.0.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/datastax/cassandra/cassandra-driver-core/2.0.1/cassandra-driver-core-2.0.1.pom"/>
+				<caller organisation="com.opi.lil" name="sentence-extractor_2.11" conf="test, compile, runtime" rev="2.0.1" rev-constraint-default="2.0.1" rev-constraint-dynamic="2.0.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="cassandra-driver-core" type="bundle" ext="jar" status="no" details="" size="519771" time="0" location="C:\Users\roziewski\.ivy2\cache\com.datastax.cassandra\cassandra-driver-core\bundles\cassandra-driver-core-2.0.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/datastax/cassandra/cassandra-driver-core/2.0.1/cassandra-driver-core-2.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.xerial.snappy" name="snappy-java">
+			<revision name="1.0.5" status="release" pubdate="20130517033557" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/xerial/snappy-java/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="9">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3882" time="0" location="C:\Users\roziewski\.ivy2\cache\org.xerial.snappy\snappy-java\ivy-1.0.5.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.0.5/snappy-java-1.0.5.pom"/>
+				<caller organisation="com.opi.lil" name="sentence-extractor_2.11" conf="test, compile, runtime" rev="1.0.5" rev-constraint-default="1.0.5" rev-constraint-dynamic="1.0.5" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="snappy-java" type="bundle" ext="jar" status="no" details="" size="1251514" time="0" location="C:\Users\roziewski\.ivy2\cache\org.xerial.snappy\snappy-java\bundles\snappy-java-1.0.5.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.0.5/snappy-java-1.0.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.codahale.metrics" name="metrics-core">
+			<revision name="3.0.2" status="release" pubdate="20140217013139" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="8">
+				<metadata-artifact status="no" details="" size="4649" time="0" location="C:\Users\roziewski\.ivy2\cache\com.codahale.metrics\metrics-core\ivy-3.0.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/codahale/metrics/metrics-core/3.0.2/metrics-core-3.0.2.pom"/>
+				<caller organisation="com.datastax.cassandra" name="cassandra-driver-core" conf="default, compile, runtime, master" rev="3.0.2" rev-constraint-default="3.0.2" rev-constraint-dynamic="3.0.2" callerrev="2.0.1"/>
+				<artifacts>
+					<artifact name="metrics-core" type="bundle" ext="jar" status="no" details="" size="85448" time="0" location="C:\Users\roziewski\.ivy2\cache\com.codahale.metrics\metrics-core\bundles\metrics-core-3.0.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/codahale/metrics/metrics-core/3.0.2/metrics-core-3.0.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.guava" name="guava">
+			<revision name="16.0.1" status="release" pubdate="20140203234528" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="7">
+				<metadata-artifact status="no" details="" size="5985" time="0" location="C:\Users\roziewski\.ivy2\cache\com.google.guava\guava\ivy-16.0.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.pom"/>
+				<caller organisation="com.datastax.cassandra" name="cassandra-driver-core" conf="default, compile, runtime, master" rev="16.0.1" rev-constraint-default="16.0.1" rev-constraint-dynamic="16.0.1" callerrev="2.0.1"/>
+				<artifacts>
+					<artifact name="guava" type="bundle" ext="jar" status="no" details="" size="2228009" time="0" location="C:\Users\roziewski\.ivy2\cache\com.google.guava\guava\bundles\guava-16.0.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.sun.jna" name="jna">
+			<revision name="3.0.9" status="release" pubdate="20090709003600" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://jna.dev.java.net/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="5">
+				<license name="Unknown License" url="http://www.gnu.org/copyleft/lesser.html"/>
+				<metadata-artifact status="no" details="" size="2636" time="0" location="C:\Users\roziewski\.ivy2\cache\com.sun.jna\jna\ivy-3.0.9.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/sun/jna/jna/3.0.9/jna-3.0.9.pom"/>
+				<caller organisation="com.opi.lil" name="sentence-extractor_2.11" conf="test, compile, runtime" rev="3.0.9" rev-constraint-default="3.0.9" rev-constraint-dynamic="3.0.9" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jna" type="jar" ext="jar" status="no" details="" size="795871" time="0" location="C:\Users\roziewski\.ivy2\cache\com.sun.jna\jna\jars\jna-3.0.9.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/sun/jna/jna/3.0.9/jna-3.0.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-classic">
+			<revision name="1.1.2" status="release" pubdate="20140402214238" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://logback.qos.ch" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="3">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="10581" time="0" location="C:\Users\roziewski\.ivy2\cache\ch.qos.logback\logback-classic\ivy-1.1.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.pom"/>
+				<caller organisation="com.opi.lil" name="sentence-extractor_2.11" conf="test, compile, runtime" rev="1.1.2" rev-constraint-default="1.1.2" rev-constraint-dynamic="1.1.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="logback-classic" type="jar" ext="jar" status="no" details="" size="270750" time="0" location="C:\Users\roziewski\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-core">
+			<revision name="1.1.2" status="release" pubdate="20140402214047" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://logback.qos.ch" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="4">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="9845" time="0" location="C:\Users\roziewski\.ivy2\cache\ch.qos.logback\logback-core\ivy-1.1.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.1.2/logback-core-1.1.2.pom"/>
+				<caller organisation="ch.qos.logback" name="logback-classic" conf="default, compile, runtime, master" rev="1.1.2" rev-constraint-default="1.1.2" rev-constraint-dynamic="1.1.2" callerrev="1.1.2"/>
+				<artifacts>
+					<artifact name="logback-core" type="jar" ext="jar" status="no" details="" size="427729" time="0" location="C:\Users\roziewski\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.1.2/logback-core-1.1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-slf4j_2.11">
+			<revision name="2.3.6" status="release" pubdate="20140905090030" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3079" time="0" location="C:\Users\roziewski\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\ivy-2.3.6.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.11/2.3.6/akka-slf4j_2.11-2.3.6.pom"/>
+				<caller organisation="com.opi.lil" name="sentence-extractor_2.11" conf="test, compile, runtime" rev="2.3.6" rev-constraint-default="2.3.6" rev-constraint-dynamic="2.3.6" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="akka-slf4j_2.11" type="jar" ext="jar" status="no" details="" size="15173" time="0" location="C:\Users\roziewski\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.6.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.11/2.3.6/akka-slf4j_2.11-2.3.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-actor_2.11">
+			<revision name="2.3.6" status="release" pubdate="20140905085904" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="default, master(*), compile, runtime(*), runtime, default(compile), compile(*), master" position="0">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2687" time="0" location="C:\Users\roziewski\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\ivy-2.3.6.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.3.6/akka-actor_2.11-2.3.6.pom"/>
+				<caller organisation="com.opi.lil" name="sentence-extractor_2.11" conf="test, compile, runtime" rev="2.3.6" rev-constraint-default="2.3.6" rev-constraint-dynamic="2.3.6" callerrev="1.0"/>
+				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.11" conf="default, compile, runtime, master" rev="2.3.6" rev-constraint-default="2.3.6" rev-constraint-dynamic="2.3.6" callerrev="2.3.6"/>
+				<artifacts>
+					<artifact name="akka-actor_2.11" type="jar" ext="jar" status="no" details="" size="2545886" time="0" location="C:\Users\roziewski\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.6.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.3.6/akka-actor_2.11-2.3.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="config">
+			<revision name="1.2.1" status="release" pubdate="20140502165416" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="1">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2768" time="0" location="C:\Users\roziewski\.ivy2\cache\com.typesafe\config\ivy-1.2.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/typesafe/config/1.2.1/config-1.2.1.pom"/>
+				<caller organisation="com.typesafe.akka" name="akka-actor_2.11" conf="default, compile, runtime, master" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="2.3.6"/>
+				<artifacts>
+					<artifact name="config" type="bundle" ext="jar" status="no" details="" size="219554" time="0" location="C:\Users\roziewski\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/config/1.2.1/config-1.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

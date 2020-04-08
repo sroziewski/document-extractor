@@ -1,0 +1,12 @@
+aasembly
+assembly
+compile
+assembly
+ last compile:compileIncremental 
+run
+scala
+run
+compile
+cd %JAVA_HOME%
+compile
+run
